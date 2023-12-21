@@ -1,0 +1,3 @@
+ninja: Entering directory `E:\karuizhi\project3\android\nihui-yolov5\nihui-yolov5\app\.cxx\Debug\6k5y2x2m\armeabi-v7a'
+[1/2] Building CXX object CMakeFiles/yolov5ncnn.dir/yolov5ncnn_jni.cpp.o
+[2/2] Linking CXX shared library E:\karuizhi\project3\android\nihui-yolov5\nihui-yolov5\app\build\intermediates\cxx\Debug\6k5y2x2m\obj\armeabi-v7a\libyolov5ncnn.so

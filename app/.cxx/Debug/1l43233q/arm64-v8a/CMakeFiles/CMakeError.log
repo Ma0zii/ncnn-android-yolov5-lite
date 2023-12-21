@@ -1,0 +1,39 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: E:/karuizhi/project3/android/nihui-yolov5/krz_p3_ad1.2_r/app/.cxx/Debug/1l43233q/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:\Users\111\AppData\Local\Android\Sdk\cmake\3.18.1\bin\ninja.exe cmTC_d5c17 && [1/2] Building C object CMakeFiles/cmTC_d5c17.dir/src.c.o
+src.c:13:3: warning: implicit declaration of function 'pthread_cancel' is invalid in C99 [-Wimplicit-function-declaration]
+  pthread_cancel(thread);
+  ^
+1 warning generated.
+[2/2] Linking C executable cmTC_d5c17
+FAILED: cmTC_d5c17 
+cmd.exe /C "cd . && C:\Users\111\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=aarch64-none-linux-android24 --gcc-toolchain=C:/Users/111/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/111/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCMAKE_HAVE_LIBC_PTHREAD -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections CMakeFiles/cmTC_d5c17.dir/src.c.o -o cmTC_d5c17  -latomic -lm && cd ."
+CMakeFiles/cmTC_d5c17.dir/src.c.o: In function `main':
+E:\karuizhi\project3\android\nihui-yolov5\krz_p3_ad1.2_r\app\.cxx\Debug\1l43233q\arm64-v8a\CMakeFiles\CMakeTmp/src.c:(.text.main+0x20): undefined reference to `pthread_cancel'
+E:\karuizhi\project3\android\nihui-yolov5\krz_p3_ad1.2_r\app\.cxx\Debug\1l43233q\arm64-v8a\CMakeFiles\CMakeTmp/src.c:(.text.main+0x24): undefined reference to `pthread_cancel'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

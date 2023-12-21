@@ -1,0 +1,12 @@
+[
+{
+  "directory": "E:/karuizhi/project3/android/nihui-yolov5/nihui-yolov5/app/.cxx/Debug/6k5y2x2m/arm64-v8a",
+  "command": "C:\\Users\\111\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android24 --gcc-toolchain=C:/Users/111/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/111/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dyolov5ncnn_EXPORTS -isystem E:/karuizhi/project3/android/nihui-yolov5/nihui-yolov5/app/src/main/jni/ncnn-20231027-android-vulkan/arm64-v8a/include/ncnn -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC -fno-rtti -fno-exceptions -pthread -o CMakeFiles\\yolov5ncnn.dir\\yolov5ncnn_jni.cpp.o -c E:\\karuizhi\\project3\\android\\nihui-yolov5\\nihui-yolov5\\app\\src\\main\\jni\\yolov5ncnn_jni.cpp",
+  "file": "E:\\karuizhi\\project3\\android\\nihui-yolov5\\nihui-yolov5\\app\\src\\main\\jni\\yolov5ncnn_jni.cpp"
+},
+{
+  "directory": "E:/karuizhi/project3/android/nihui-yolov5/nihui-yolov5/app/.cxx/Debug/6k5y2x2m/arm64-v8a",
+  "command": "C:\\Users\\111\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android24 --gcc-toolchain=C:/Users/111/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/111/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dyolov5ncnn_EXPORTS -isystem E:/karuizhi/project3/android/nihui-yolov5/nihui-yolov5/app/src/main/jni/ncnn-20231027-android-vulkan/arm64-v8a/include/ncnn -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC -fno-rtti -fno-exceptions -pthread -o CMakeFiles\\yolov5ncnn.dir\\lite.cpp.o -c E:\\karuizhi\\project3\\android\\nihui-yolov5\\nihui-yolov5\\app\\src\\main\\jni\\lite.cpp",
+  "file": "E:\\karuizhi\\project3\\android\\nihui-yolov5\\nihui-yolov5\\app\\src\\main\\jni\\lite.cpp"
+}
+]

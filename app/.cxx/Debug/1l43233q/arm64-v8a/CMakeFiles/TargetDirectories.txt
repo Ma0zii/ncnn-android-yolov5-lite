@@ -1,0 +1,3 @@
+E:/karuizhi/project3/android/nihui-yolov5/krz_p3_ad1.2_r/app/.cxx/Debug/1l43233q/arm64-v8a/CMakeFiles/yolov5ncnn.dir
+E:/karuizhi/project3/android/nihui-yolov5/krz_p3_ad1.2_r/app/.cxx/Debug/1l43233q/arm64-v8a/CMakeFiles/edit_cache.dir
+E:/karuizhi/project3/android/nihui-yolov5/krz_p3_ad1.2_r/app/.cxx/Debug/1l43233q/arm64-v8a/CMakeFiles/rebuild_cache.dir
