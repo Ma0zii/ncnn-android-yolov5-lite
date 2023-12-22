@@ -20,7 +20,7 @@
 
 该版本是推理两个yolov5-lite模型的
 
-*CSDN博客：*
+*CSDN博客：https://blog.csdn.net/Maoziii/article/details/135146324?spm=1001.2014.3001.5502*
 
 ***运行前还需要：***
 
@@ -31,6 +31,13 @@
 ***3、修改.param文件中permute层的名字与推理时ex获取的out层名字一样***
 
 ***4、修改自己模型.param文件中reshape层，改为动态获取***
+
+参考：
+nihui安卓部署yolov5：
+https://github.com/nihui/ncnn-android-yolov5
+
+yolov5-lite作者ppogg的仓库：
+https://github.com/ppogg/YOLOv5-Lite
 
 
 -----------------------------------------------------------------------
