@@ -10,7 +10,7 @@
 
 改了后处理部分和一些参数传递
 
-*分离了原版jni的部分，写成了cpp来调用推理*
+***分离了原版jni的部分，写成了cpp来调用推理***
 
 因此只需简单修改参数就可以推理多个yolov5模型
 
@@ -20,15 +20,13 @@
 
 该版本是推理两个yolov5-lite模型的
 
-# 运行前还需要：
+***运行前还需要：
+1、准备自己的yolov5模型并转化为ncnn
+2、修改target_size，修改模型路径等
+3、修改.param文件中permute层的名字与推理时ex获取的out层名字一样
+4、修改自己模型.param文件中reshape层，改为动态获取***
 
-## 1、准备自己的yolov5模型并转化为ncnn
-
-## 2、修改target_size，修改模型路径等
-
-## 3、修改.param文件中permute层的名字与推理时ex获取的out层名字一样
-
-## 4、修改自己模型.param文件中reshape层，改为动态获取
+CSDN博客：
 
 -----------------------------------------------------------------------
 
@@ -49,7 +47,4 @@ extract ncnn-android-vulkan.zip into app/src/main/jni or change the ncnn_DIR pat
 
 ### step3
 open this project with Android Studio, build it and enjoy!
-
-## screenshot
-![](screenshot.jpg)
 
